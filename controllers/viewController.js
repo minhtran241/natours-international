@@ -84,8 +84,8 @@ exports.getMyTours = catchAsync(async (req, res, next) => {
   if (bookings.length === 0) {
     res.status(200).render('nullbooking', {
       title: 'Book Tours',
-      headLine: `You haven't booked any tours yet!`,
-      msg: `Please book a tour and come back. 🙂`,
+      headLine: `You haven't booked any tours yet.`,
+      msg: `Please book a tour and come back!`,
     });
   } else {
     res.status(200).render('overview', {
