@@ -82,7 +82,7 @@ exports.getMyTours = catchAsync(async (req, res, next) => {
   const tours = await Tour.find({ _id: { $in: tourIDs } });
 
   if (bookings.length === 0) {
-    res.status(200).render('nullbooking', {
+    res.status(200).render('nullBooking', {
       title: 'Book Tours',
       headLine: `You haven't booked any tours yet.`,
       msg: `Please book a tour and come back!`,
