@@ -66,16 +66,7 @@ module.exports = class Email {
   async sendPasswordReset() {
     await this.send(
       'passwordReset',
-      'Your password reset token(valid for only 10 minutes)'
+      'Your password reset token (valid for only 10 minutes)'
     );
   }
 };
-
-// const sendEmail = async (options) => {
-//   // 1) Create a transporter(a service which sends email)
-
-//   // 2) Define the email options
-
-//   // 3) Actually send the email
-//   await transporter.sendMail(mailOptions); // returns promise
-// };

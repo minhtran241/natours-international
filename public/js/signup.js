@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { showAlert } from './alert';
+import { Email } from '../../utils/email';
 
 export const signup = async (name, email, password, passwordConfirm) => {
   try {
