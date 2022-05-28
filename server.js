@@ -52,7 +52,7 @@ const server = app.listen(port, () => {
 // UNHANDLED PROMISE REJEJCTION(Errors occured in asynchronous code, but never handles)
 process.on('unhandledRejection', (err) => {
   console.log(err.name, err.message);
-  console.log('UNHANDLED REJECTION! Shutting down...');
+  console.log('UNHANDLED REJECTION! 💥 Shutting down...');
   server.close(() => {
     process.exit(1); // 0--> success, 1--> exceptions
   });
@@ -62,8 +62,8 @@ process.on('unhandledRejection', (err) => {
 
 // SIGTERM--> A signal that stops the program from running
 process.on('SIGTERM', () => {
-  console.log('👋zz SIGTERM RECEIVED, shutting down gracefully');
+  console.log('👋 SIGTERM RECEIVED. Shutting down gracefully.');
   server.close(() => {
-    console.log('💥 process terminated');
+    console.log('💥 Process terminated!');
   });
 });

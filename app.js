@@ -23,7 +23,7 @@ const { application } = require('express');
 const app = express();
 
 // Because heroku acts as a proxy
-app.enable('trust express');
+app.enable('trust proxy');
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
