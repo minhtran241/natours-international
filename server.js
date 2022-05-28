@@ -6,7 +6,7 @@ const { Log } = require('logs-colorifier');
 // Should be defined in the top-level
 process.on('uncaughtException', (err) => {
   Log.error(err.name, err.message);
-  Log.error('UNCAUGHT EXCEPTION! Shutting down...');
+  Log.error('UNCAUGHT EXCEPTION! 💥 Shutting down...');
   process.exit(1);
 });
 
