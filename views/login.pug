@@ -3,7 +3,7 @@ extends base
 block content
   main.main
     .login-form
-      h2.heading-secondary.ma-bt-lg Log into your account
+      h2.heading-secondary.ma-bt-lg.login---label Log into your account
       form.form.form--login
         .form__group
           label.form__label(for='email') Email address
@@ -14,5 +14,5 @@ block content
         .form__group
           button.btn.btn--green.btn--login Login
         .form__group
-          a.from--link(href='/forgotpassword') Forgot password?
+          a.from--link.login---label(href='/forgotpassword') Forgot password?
 

@@ -243,6 +243,11 @@ body {
   background-color: #55c57a;
 }
 
+.btn--signup {
+  left: 46% !important;
+  right: 45% !important;
+}
+
 .btn--small {
   padding: 1.25rem 3rem !important;
   font-size: 1.4rem !important;
@@ -1242,6 +1247,16 @@ body {
   box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
   padding: 5rem 7rem;
   border-radius: 5px;
+}
+
+.btn--login {
+  left: 37% !important;
+  right: 37% !important;
+}
+
+.login---label {
+  text-align: center !important;
+  display: block !important;
 }
 
 .form__input {
