@@ -118,7 +118,7 @@ exports.updateUserData = catchAsync(async (req, res, next) => {
 });
 
 exports.forgotPassword = (req, res) => {
-  res.status(200).render('forgotpassword', {
+  res.status(200).render('forgotPassword', {
     title: 'Forgot Password',
   });
 };
