@@ -43,10 +43,10 @@ block content
           h2.heading-secondary.ma-bt-lg Quick facts
 
           - const date = tour.startDates[0].toLocaleString('en-us', {month: 'long', year: 'numeric'})
-          +overviewBox('Next Date', date, 'icon')
+          +overviewBox('Next Date', date, 'calendar')
           +overviewBox('Difficulty', tour.difficulty, 'trending-up')
-          +overviewBox('Participants', `${tour.maxGroupSize} people`, 'icon-user')
-          +overviewBox('Rating', `${tour.averageRating} / 5`, 'icon-star')
+          +overviewBox('Participants', `${tour.maxGroupSize} people`, 'user')
+          +overviewBox('Rating', `${tour.ratingsAverage} / 5`, 'star')
 
         .overview-box__group
           h2.heading-secondary.ma-bt-lg Your tour guides
