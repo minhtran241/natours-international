@@ -10,8 +10,6 @@
 
 ✅ Natours-International is a full stack web application that specially designed for persons who love travelling and going on tour vacations.
 
-✅ The documentation of the API for Natours-International can be found at [here](#).
-
 ✅ The API and the app itself are hosted on the same server.
 
 ## 🖼 Overview
